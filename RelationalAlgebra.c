@@ -2,24 +2,13 @@
 
 void selection(char** category, char** data, int size, TABLE src, TABLE dst){
     int attribute[size];
-    // printf("abd\n");
     for (int i = 0; i < size; i++){
         char** source = get_data(src);
         bool isFailed = true;
-        // printf("abf\n");
         for (int j = 0; j < get_size(src); j++){
-            // if (source[j] == NULL){
-            //     printf("dmm\n");
-            // } 
-            // if (category[i] == NULL){
-            //     printf("dcmm");
-            // }
-            // printf("abg\n");
             if (strcmp(source[j], category[i]) == 0){
-                // printf("abc\n");
                 attribute[i] = j+1;
                 isFailed = false;
-                // printf("abe\n");
                 break;
             }
         }
@@ -31,7 +20,6 @@ void selection(char** category, char** data, int size, TABLE src, TABLE dst){
 
     TUPLELIST tuple = get_copy(get_last_tuple(src));
     dst[TABLE_SIZE] = tuple;
-    // printf("abd\n");
 
     int key = get_key(src);
     for (int m = 0; m < size; m++){

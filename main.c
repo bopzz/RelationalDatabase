@@ -52,15 +52,6 @@ void part_1()
     printf("\nNew table\n");
     print_table(P1_CP);
     printf("\n\n");
-
-    // free_tuple(a);
-    // free_tuple(b);
-    // free_tuple(c);
-    // free_tuple(d);
-    // free_tuple(e);
-    // free_table(P1_CSG);
-    // free_table(P1_CDH);
-    // free_table(P1_CP);
 }
 
 void part_2_1(char *name, char *course, TABLE CSG, TABLE SNAP)
