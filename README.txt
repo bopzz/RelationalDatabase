@@ -1,8 +1,3 @@
-CSC 173 Project 4
-Name: Minh Tuan Nguyen
-NetID: mnguy32
-Email: mnguy32@u.rochester.edu
-
 Build and Run command:
 gcc -o main Database.c ReadWriteDB.c RelationalAlgebra.c main.c -Wall -Werror -std=c99
 gdb main
@@ -57,8 +52,7 @@ gcc -o main Database.c ReadWriteDB.c RelationalAlgebra.c main.c -Wall -Werror -s
 main
 (You may have to repeat "main" a couple of times before it works properly so please be patient)
 
-I also did both parts of the extra credit:
-Part 1: 
+I also coded the feature for reading and writing to the generic database in Database.c
 Reading and Writing format:
 [key] [number of attributes in a tuple] [number of tuples]
 [attribute1]
@@ -72,7 +66,3 @@ Reading and Writing format:
 [tuple2 data1]
 [tuple2 data2]
 ...
-
-Part 2: I implemented a generic database in Databse.c 
-
-Thank you very much for grading my project!
