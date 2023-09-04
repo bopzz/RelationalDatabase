@@ -213,7 +213,6 @@ int main()
             break;
         }
         char *final_name = strtok(name, "\n");
-        // printf("Name is %s\n", strtok(name, "\n"));
 
         printf("Enter course: ");
         fgets(course, 50, stdin);
@@ -222,7 +221,6 @@ int main()
             break;
         }
         char *final_course = strtok(course, "\n");
-        // printf("Course is %s\n", strtok(course, "\n"));
 
         printf("\n");
         part_2_1(final_name, final_course, CSG, SNAP);
