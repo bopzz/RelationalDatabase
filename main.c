@@ -2,6 +2,7 @@
 #include "ReadWriteDB.h"
 #include "RelationalAlgebra.h"
 
+//Part1
 void part_1()
 {
     printf("Importing necessary databases for part 1...\n");
@@ -54,6 +55,7 @@ void part_1()
     printf("\n\n");
 }
 
+//Part2
 void part_2_1(char *name, char *course, TABLE CSG, TABLE SNAP)
 {
     bool isFound = false;
@@ -146,6 +148,7 @@ void part_2_2(char *name, char *hour, char *day, TABLE SNAP, TABLE CSG, TABLE CD
     }
 }
 
+//Part3
 void part_3(TABLE CSG, TABLE CR, TABLE CDH){
     printf("1) Selection\n");
     TABLE p3_1 = {NULL};
